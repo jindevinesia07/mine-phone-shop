@@ -7,25 +7,11 @@
 <meta name="theme-color" content="#F5F2EC">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&family=Playfair+Display:wght@900&display=swap">
 <style>
-:root {
-  --bg:#F5F2EC;
-  --card:#F3E9E4;
-  --ink:#442E23;
-  --mut:#8a7468;
-  --pink:#FAD1D8;
-  --brand:#6B4630;
-  --red:#8B0000;
-  --blue:#6fa3c4;
-  --bar:#fff;
-  --pill:#2a1c15;
-  --pillt:#fff;
-  --line:#e6d9d0;
+:root{
+  --bg:#F5F2EC;--card:#F3E9E4;--ink:#442E23;--mut:#8a7468;--pink:#FAD1D8;--brand:#6B4630;--red:#8B0000;--blue:#6fa3c4;--bar:#fff;--pill:#2a1c15;--pillt:#fff;--line:#e6d9d0;
 }
-
 @media(prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#1e1613;--card:#2b201b;--ink:#f1e6dc;--mut:#b9a698;--bar:#2b201b;--pill:#FAD1D8;--pillt:#2a1c15;--line:#44342c;--brand:#e0b9a3;--red:#ff9a9a
-  }
+  :root:not([data-theme="light"]){--bg:#1e1613;--card:#2b201b;--ink:#f1e6dc;--mut:#b9a698;--bar:#2b201b;--pill:#FAD1D8;--pillt:#2a1c15;--line:#44342c;--brand:#e0b9a3;--red:#ff9a9a}
 }
 :root[data-theme="dark"]{--bg:#1e1613;--card:#2b201b;--ink:#f1e6dc;--mut:#b9a698;--bar:#2b201b;--pill:#FAD1D8;--pillt:#2a1c15;--line:#44342c;--brand:#e0b9a3;--red:#ff9a9a}
 
@@ -41,24 +27,27 @@ svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stro
 .sec{margin:18px 16px 8px;font-weight:600;font-size:17px;color:var(--brand);border-bottom:1.5px solid var(--ink);padding-bottom:4px}
 
 /* welcome */
-.wc{min-height:100vh;margin-bottom:-96px;display:flex;flex-direction:column;background:var(--bg)}
-.wh{flex:1;min-height:50vh;position:relative;background-size:cover;background-position:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;color:#fff;padding:30px 20px 80px;text-shadow:0 2px 10px #0006;background-color:var(--brand)}
-.wh:before{content:'';position:absolute;inset:0;background:linear-gradient(#0001,#0005)}.wh>*{position:relative}
-.lg{width:92px;height:92px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;box-shadow:0 6px 20px #0004;color:#6B4630;font-size:38px;text-shadow:none}
-.wh h1{margin:10px 0 0;font-size:28px;letter-spacing:2px;font-weight:600}.wh p{margin:0;font-size:14px;opacity:0.9}
-.ws{background:var(--bg);margin-top:-50px;border-radius:50% 50% 0 0/38px;padding:30px 24px 34px;text-align:center;position:relative}
-.ws h2{margin:0 0 10px;font-size:28px;letter-spacing:1px;font-weight:700;color:var(--brand)}
-.wd{color:var(--mut);line-height:1.6;margin-bottom:14px}
-.wb1,.wb2{display:block;width:100%;padding:15px;border-radius:999px;font-weight:500;margin-top:12px;text-align:center;text-decoration:none;box-sizing:border-box}
-.wb1{background:var(--pill);color:var(--pillt)}.wb2{border:1px solid var(--line);background:var(--bar);color:var(--ink)}
+.wl{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;background:repeating-linear-gradient(90deg,#dfe4fa 0 14px,#fff 14px 28px);color:#6B4630}
+.wl .arc{width:300px;margin-bottom:-28px;position:relative;z-index:1}
+.ci{width:230px;height:230px;border-radius:50%;overflow:hidden;background:linear-gradient(#c5e6fb,#eef8ff)}
+.wl h1{font-family:'Playfair Display',serif;font-weight:900;font-size:34px;letter-spacing:1px;margin:10px 0 0;text-shadow:0 2px 0 #fff}
+.op{background:#0aa84f;color:#fff;font-weight:600;font-size:22px;padding:2px 22px;border-radius:12px}
+.nt{background:#f3ede8;color:#a58a76;border-radius:10px;padding:4px 14px;font-size:13px;letter-spacing:1px}
+.bt{background:var(--brand);color:var(--brandt,#fff);border-radius:999px;padding:11px 28px;font-weight:500}
+.lk{color:#6B4630;text-decoration:underline;font-size:13px}
+
+/* auth */
+label{display:block;margin:12px 0 4px;color:var(--mut);font-size:13px}
+input,select{width:100%;padding:11px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card)}
+.r3{display:grid;grid-template-columns:1fr 1fr 1.6fr;gap:8px}
+.seg{display:flex;background:var(--card);border-radius:999px;padding:4px;margin:0 16px}
+.seg button{flex:1;padding:8px;border-radius:999px;color:var(--mut)}.seg .on{background:var(--pill);color:var(--pillt)}
 
 /* home */
 .sr{margin:0 16px;position:relative}.sr input{padding-left:42px}.sr svg{position:absolute;left:12px;top:10px;color:var(--mut)}
-label{display:block;margin:12px 0 4px;color:var(--mut);font-size:13px}
-input,select{width:100%;padding:11px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card)}
 #bn{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0;margin:14px 16px 0;border-radius:22px;scrollbar-width:none}
 #bn::-webkit-scrollbar{display:none}
-.sl{flex:none;width:100%;height:130px;scroll-snap-align:start;padding:18px;color:#fff;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg, var(--brand), #8b5a3c);border-radius:22px}
+.sl{flex:none;width:100%;height:130px;scroll-snap-align:start;padding:18px;color:#fff;display:flex;flex-direction:column;justify-content:center}
 .sl b{font-size:19px}.sl span{opacity:.85;margin-top:4px}
 .ch{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}.ch::-webkit-scrollbar{display:none}
 .ch button{flex:none;padding:7px 14px;border-radius:999px;background:var(--card);color:var(--blue);font-weight:500;border:1px solid transparent}
@@ -66,20 +55,43 @@ input,select{width:100%;padding:11px 14px;border-radius:14px;border:1px solid va
 .g{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:6px 14px}
 
 /* glass product card */
-.cd{position:relative;border-radius:28px;overflow:hidden;color:var(--ink);background:var(--card);box-shadow:0 10px 22px #0001;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;padding:12px;border:1px solid var(--line)}
-.cd .im{height:140px;border-radius:18px;background:var(--bar);display:grid;place-items:center;margin-bottom:8px;overflow:hidden}
-.cd .tt b{font-size:15px;font-weight:600}
-.pp{background:var(--pink);color:var(--ink);border-radius:999px;padding:3px 8px;font-size:12px;font-weight:600;display:inline-block;margin-top:4px}
-.wb{display:block;width:100%;background:var(--brand);color:#fff;border-radius:999px;padding:8px;font-weight:600;font-size:12px;margin-top:8px;text-align:center}
+.cd{position:relative;border-radius:28px;overflow:hidden;color:#fff;height:340px;background:#6B4630;box-shadow:0 10px 22px #0003;cursor:pointer}
+.cd .im{position:absolute;inset:0 0 auto 0;height:58%;display:grid;place-items:center;font-size:50px}
+.cd .bd{position:absolute;inset:auto 0 0 0;padding:0 12px 12px}
+.tt{display:flex;justify-content:space-between;align-items:center;gap:4px}.tt b{font-size:15px;font-weight:600}
+.pp{background:#0006;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:600;white-space:nowrap;display:inline-block}
+.ds{font-size:11px;line-height:1.45;color:#ffffffb0;margin:5px 0 7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tg{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px}.tg span{background:#ffffff2e;border-radius:999px;padding:3px 9px;font-size:10.5px;font-weight:500}
+.wb{display:block;width:100%;background:#fff;color:#111;border-radius:999px;padding:10px;font-weight:600;font-size:13px;text-align:center;border:0;cursor:pointer}
+.cd .hb{position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;background:#0004;color:#fff;display:grid;place-items:center}
+.bdg{position:absolute;top:12px;left:10px;display:flex;gap:4px;flex-direction:column;align-items:flex-start}
+.bdg span{background:var(--pink);color:#442E23;font-size:10.5px;font-weight:600;padding:2px 9px;border-radius:999px}
 
 /* nav pill */
 #nav{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:min(480px,100%);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));z-index:4}
-#nav div{background:var(--bar);border-radius:20px;padding:8px 14px;display:flex;justify-content:space-around;align-items:center;box-shadow:0 6px 24px #0002}
-#nav button{display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;color:var(--ink);font-weight:500;font-size:13px}
-#nav .on{background:var(--pill);color:var(--pillt)}
-#nav button:not(.on) span{display:none}
+#nav div{background:var(--bar);border-radius:20px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 6px 24px #0003}
+#nav button{display:flex;align-items:center;gap:8px;padding:10px;border-radius:999px;color:var(--ink);font-weight:500}
+#nav .on{background:var(--pill);color:var(--pillt);padding:10px 16px}#nav button:not(.on) span{display:none}
 
 #ts{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);background:var(--pill);color:var(--pillt);padding:9px 18px;border-radius:999px;opacity:0;transition:.3s;pointer-events:none;z-index:9}
+
+/* welcome cover full */
+.wc{min-height:100vh;margin-bottom:-96px;display:flex;flex-direction:column;background:var(--bg)}
+.wh{flex:1;min-height:58vh;position:relative;background-size:cover;background-position:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;color:#fff;padding:30px 20px 80px;background-color:var(--brand)}
+.lg{width:92px;height:92px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;box-shadow:0 6px 20px #0004;color:#6B4630;font-size:38px}
+.wh h1{margin:10px 0 0;font-size:30px;letter-spacing:2px;font-weight:600}
+.ws{background:var(--bg);margin-top:-50px;border-radius:50% 50% 0 0/38px;padding:30px 24px 34px;text-align:center;position:relative}
+.ws h2{margin:0 0 10px;font-size:34px;letter-spacing:2px;font-weight:700;color:var(--brand)}
+.wd{color:var(--mut);line-height:1.6;margin-bottom:14px}
+.wb1,.wb2{display:block;width:100%;padding:15px;border-radius:999px;font-weight:500;margin-top:12px;border:0;cursor:pointer;text-align:center}
+.wb1{background:var(--pill);color:var(--pillt)}.wb2{border:1px solid var(--line);background:var(--bar);color:var(--ink)}
+
+/* Glassmorphism Auth Screen */
+.ag{position:relative;overflow:hidden;min-height:100vh;margin-bottom:-96px;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 15% 12%,#FAD1D8 0,transparent 45%),radial-gradient(circle at 88% 85%,#c3dc7c 0,transparent 42%),radial-gradient(circle at 75% 15%,#cfe9fb 0,transparent 40%),#ece0d3}
+.ag i{position:absolute;border-radius:50%}.b1{width:240px;height:240px;background:#a5714f;top:14%;left:-50px}.b2{width:210px;height:210px;background:#f1a9b9;bottom:12%;right:-40px}
+.gl{position:relative;width:100%;max-width:400px;padding:22px 24px 26px;border-radius:44px;background:rgba(255,255,255,.3);-webkit-backdrop-filter:blur(22px) saturate(1.4);backdrop-filter:blur(22px) saturate(1.4);border:1px solid rgba(255,255,255,.75);box-shadow:0 20px 50px #442e2338,inset 0 1px 0 #fffa;color:#3a2a20}
+.gl input{background:rgba(255,255,255,.5);border:1px solid #fff9;color:#3a2a20}
+.gl .gb{display:block;width:100%;margin-top:16px;padding:13px;border-radius:999px;background:rgba(255,255,255,.35);border:1px solid #fff;font-weight:600;color:#3a2a20;cursor:pointer}
 </style>
 </head>
 <body>
@@ -91,80 +103,103 @@ input,select{width:100%;padding:11px 14px;border-radius:14px;border:1px solid va
 <noscript>ต้องเปิด JavaScript เพื่อใช้งานเว็บนี้</noscript>
 
 <script>
-// Mockup Application Logic
-const state = {
-  page: 'welcome', // 'welcome' | 'home' | 'cart'
+// ตัวจัดการหน้าจอ (Router) โดยคงดีไซน์เดิมของคุณไว้ครบถ้วน
+const appState = {
+  page: 'welcome', // 'welcome' | 'auth' | 'home'
   category: 'all',
   products: [
-    { id: 1, name: 'iPhone 15 Pro', price: '39,900 ฿', brand: 'Apple', icon: '📱' },
-    { id: 2, name: 'Samsung S24 Ultra', price: '42,900 ฿', brand: 'Samsung', icon: '📲' },
-    { id: 3, name: 'iPad Air 5', price: '21,900 ฿', brand: 'Apple', icon: '📱' },
-    { id: 4, name: 'Xiaomi 14', price: '29,900 ฿', brand: 'Xiaomi', icon: '📲' }
+    { id: 1, name: 'iPhone 15 Pro Max', price: '39,900 ฿', tag: 'มือ 1 ประกันศูนย์', desc: 'ชิป A17 Pro ไทเทเนียมสุดแกร่ง กล้องซูม 5x', icon: '📱' },
+    { id: 2, name: 'Samsung Galaxy S24 Ultra', price: '42,900 ฿', tag: 'ศูนย์ไทย', desc: 'AI Phone ล้ำสมัย หน้าจอคมชัด สู้แสงดีเยี่ยม', icon: '📲' },
+    { id: 3, name: 'iPhone 13 (มือสองสภาพสวย)', price: '14,900 ฿', tag: 'หลุดจำนำ สภาพ 98%', desc: 'แบตเตอรี่ 88% ใช้งานปกติทุกฟังก์ชัน', icon: '📱' },
+    { id: 4, name: 'iPad Air 5 (Cellular)', price: '21,900 ฿', tag: 'เครื่องศูนย์', desc: 'ชิป M1 แรงสะใจ รองรับ 5G', icon: '💻' }
   ]
 };
 
-function renderApp() {
+function render() {
   const app = document.getElementById('app');
   const nav = document.getElementById('nav');
 
-  if (state.page === 'welcome') {
+  if (appState.page === 'welcome') {
     nav.innerHTML = '';
     app.innerHTML = `
       <div class="wc">
         <div class="wh">
           <div class="lg">📱</div>
           <h1>JINDEVINESIA</h1>
-          <p>ร้านจำหน่ายโทรศัพท์และอุปกรณ์เสริม</p>
+          <p>ร้านโทรศัพท์มือถือและบริการผ่อนสินค้า</p>
         </div>
         <div class="ws">
           <h2>ยินดีต้อนรับ</h2>
-          <p class="wd">ศูนย์รวมสมาร์ทโฟนแท้ มือ 1 และมือ 2 คุณภาพดี พร้อมบริการผ่อนชำระง่ายๆ</p>
-          <button class="wb1" onclick="navigateTo('home')">เข้าสู่ร้านค้า</button>
-          <button class="wb2" onclick="showToast('ระบบสมาชิกกำลังปรับปรุง')">เข้าสู่ระบบ / สมัครสมาชิก</button>
+          <p class="wd">แหล่งรวมสมาร์ทโฟนมือ 1 และมือ 2 คัดเกรด บริการดี ผ่อนง่าย อนุมัติไว</p>
+          <button class="wb1" onclick="navigate('home')">เข้าสู่หน้าร้านค้า</button>
+          <button class="wb2" onclick="navigate('auth')">ระบบสมาชิก / เข้าสู่ระบบ</button>
         </div>
       </div>
     `;
-  } else if (state.page === 'home') {
+  } 
+  else if (appState.page === 'auth') {
+    nav.innerHTML = '';
+    app.innerHTML = `
+      <div class="ag">
+        <i class="b1"></i><i class="b2"></i>
+        <div class="gl">
+          <h2 style="margin-top:0; color:#3a2a20;">ระบบสมาชิก</h2>
+          <div class="seg" style="margin:0 0 14px 0;">
+            <button class="on">เข้าสู่ระบบ</button>
+            <button onclick="showToast('สลับไปหน้าสมัครสมาชิก')">สมัครสมาชิก</button>
+          </div>
+          <label>เบอร์โทรศัพท์ / อีเมล</label>
+          <input type="text" placeholder="กรอกข้อมูลของคุณ...">
+          <label>รหัสผ่าน</label>
+          <input type="password" placeholder="••••••••">
+          <button class="gb" onclick="navigate('home')">เข้าสู่ระบบ</button>
+          <button class="wb2" style="margin-top:8px; background:transparent;" onclick="navigate('welcome')">← กลับหน้าแรก</button>
+        </div>
+      </div>
+    `;
+  }
+  else if (appState.page === 'home') {
     renderNav();
     app.innerHTML = `
       <div class="bar">
-        <b style="font-size:18px; color:var(--brand)">JINDEVINESIA</b>
-        <div class="rb">🔔</div>
+        <b style="font-size:18px; color:var(--brand)">JINDEVINESIA STORE</b>
+        <div class="rb" onclick="showToast('แจ้งเตือนทั้งหมด')">🔔</div>
       </div>
       
       <div class="sr">
-        <input type="text" placeholder="ค้นหารุ่นโทรศัพท์...">
+        <svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" placeholder="ค้นหารุ่นโทรศัพท์ หรืออุปกรณ์เสริม...">
       </div>
 
       <div id="bn">
-        <div class="sl">
-          <b>โปรโมชั่นผ่อน 0%</b>
-          <span>อนุมัติไว ใช้เพียงบัตรประชาชน</span>
+        <div class="sl" style="background:linear-gradient(135deg,var(--brand),#8b5a3c); border-radius:22px;">
+          <b>🔥 โปรโมชั่นผ่อนโทรศัพท์ 0%</b>
+          <span>ใช้แค่บัตรประชาชนใบเดียวก็ผ่อนได้</span>
         </div>
       </div>
 
       <div class="sec">หมวดหมู่สินค้า</div>
       <div class="ch">
-        <button class="${state.category === 'all' ? 'on' : ''}" onclick="filterCat('all')">ทั้งหมด</button>
-        <button class="${state.category === 'Apple' ? 'on' : ''}" onclick="filterCat('Apple')">Apple</button>
-        <button class="${state.category === 'Samsung' ? 'on' : ''}" onclick="filterCat('Samsung')">Samsung</button>
-        <button class="${state.category === 'Xiaomi' ? 'on' : ''}" onclick="filterCat('Xiaomi')">Xiaomi</button>
+        <button class="${appState.category === 'all' ? 'on' : ''}" onclick="setCategory('all')">ทั้งหมด</button>
+        <button class="${appState.category === 'Apple' ? 'on' : ''}" onclick="setCategory('Apple')">Apple</button>
+        <button class="${appState.category === 'Samsung' ? 'on' : ''}" onclick="setCategory('Samsung')">Samsung</button>
       </div>
 
-      <div class="sec">สินค้าแนะนำ</div>
+      <div class="sec">รายการสินค้า</div>
       <div class="g">
-        ${state.products
-          .filter(p => state.category === 'all' || p.brand === state.category)
-          .map(p => `
-            <div class="cd">
-              <div class="im" style="font-size:48px">${p.icon}</div>
-              <div class="tt">
-                <b>${p.name}</b>
-              </div>
+        ${appState.products.map(p => `
+          <div class="cd">
+            <div class="hb">❤️</div>
+            <div class="bdg"><span>${p.tag}</span></div>
+            <div class="im">${p.icon}</div>
+            <div class="bd">
+              <div class="tt"><b>${p.name}</b></div>
               <div class="pp">${p.price}</div>
-              <button class="wb" onclick="showToast('เพิ่ม ${p.name} เรียบร้อย')">ดูรายละเอียด</button>
+              <div class="ds">${p.desc}</div>
+              <button class="wb" onclick="showToast('เลือก ${p.name}')">ดูรายละเอียด</button>
             </div>
-          `).join('')}
+          </div>
+        `).join('')}
       </div>
     `;
   }
@@ -174,26 +209,31 @@ function renderNav() {
   const nav = document.getElementById('nav');
   nav.innerHTML = `
     <div>
-      <button class="${state.page === 'home' ? 'on' : ''}" onclick="navigateTo('home')">
+      <button class="${appState.page === 'home' ? 'on' : ''}" onclick="navigate('home')">
         <svg class="i" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
-        <span>หน้าแรก</span>
+        <span>หน้าร้าน</span>
       </button>
-      <button class="${state.page === 'welcome' ? 'on' : ''}" onclick="navigateTo('welcome')">
-        <svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+      <button onclick="navigate('auth')">
+        <svg class="i" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <span>สมาชิก</span>
+      </button>
+      <button onclick="navigate('welcome')">
+        <svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
         <span>หน้าแรกสุด</span>
       </button>
     </div>
   `;
 }
 
-function navigateTo(page) {
-  state.page = page;
-  renderApp();
+function navigate(page) {
+  appState.page = page;
+  render();
+  window.scrollTo(0, 0);
 }
 
-function filterCat(cat) {
-  state.category = cat;
-  renderApp();
+function setCategory(cat) {
+  appState.category = cat;
+  render();
 }
 
 function showToast(msg) {
@@ -203,11 +243,10 @@ function showToast(msg) {
   setTimeout(() => ts.style.opacity = '0', 2000);
 }
 
-// Initial Render
-renderApp();
+// เริ่มต้นรันหน้าแรก
+render();
 </script>
 
-<!-- กรณีเปิดใช้ Firebase Module จริง สามารถเรียกใต้ script หรือนำไปใช้งานร่วมกันได้ -->
 <script type="module" src="firebase.js"></script>
 </body>
 </html>
