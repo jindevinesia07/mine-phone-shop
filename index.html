@@ -22,14 +22,14 @@ svg.i{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stro
 .pg{padding:16px}h2{margin:8px 0 12px;color:var(--brand)}
 .sec{margin:18px 16px 8px;font-weight:600;font-size:17px;color:var(--brand);border-bottom:1.5px solid var(--ink);padding-bottom:4px}
 /* welcome */
-.wl{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;background:repeating-linear-gradient(90deg,#dfe4fa 0 14px,#fff 14px 28px);color:#6B4630;padding:20px}
+.wl{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;background:repeating-linear-gradient(90deg,#dfe4fa 0 14px,#fff 14px 28px);color:#6B4630}
 .wl .arc{width:300px;margin-bottom:-28px;position:relative;z-index:1}
-.ci{width:230px;height:230px;border-radius:50%;overflow:hidden;background:linear-gradient(#c5e6fb,#eef8ff);display:flex;align-items:center;justify-content:center;margin:10px 0}
+.ci{width:230px;height:230px;border-radius:50%;overflow:hidden;background:linear-gradient(#c5e6fb,#eef8ff)}
 .wl h1{font-family:'Playfair Display',serif;font-weight:900;font-size:34px;letter-spacing:1px;margin:10px 0 0;text-shadow:0 2px 0 #fff}
-.op{background:#0aa84f;color:#fff;font-weight:600;font-size:18px;padding:4px 22px;border-radius:12px;margin:8px 0}
-.nt{background:#f3ede8;color:#a58a76;border-radius:10px;padding:4px 14px;font-size:13px;letter-spacing:1px;margin-bottom:12px}
-.bt{background:var(--brand);color:var(--brandt,#fff);border-radius:999px;padding:11px 28px;font-weight:500;margin-top:10px;text-decoration:none;display:inline-block}
-.lk{color:#6B4630;text-decoration:underline;font-size:13px;margin-top:8px}
+.op{background:#0aa84f;color:#fff;font-weight:600;font-size:22px;padding:2px 22px;border-radius:12px}
+.nt{background:#f3ede8;color:#a58a76;border-radius:10px;padding:4px 14px;font-size:13px;letter-spacing:1px}
+.bt{background:var(--brand);color:var(--brandt,#fff);border-radius:999px;padding:11px 28px;font-weight:500}
+.lk{color:#6B4630;text-decoration:underline;font-size:13px}
 /* auth */
 label{display:block;margin:12px 0 4px;color:var(--mut);font-size:13px}
 input,select{width:100%;padding:11px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card)}
@@ -70,19 +70,19 @@ input,select{width:100%;padding:11px 14px;border-radius:14px;border:1px solid va
 .sv button{padding:6px 12px;border-radius:999px;border:1px solid var(--blue);color:var(--blue);font-weight:500}.sv .on{background:var(--pill);color:var(--pillt);border-color:var(--pill)}
 .rw{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px dashed var(--line)}
 input[type=range]{padding:0;accent-color:var(--brand)}
-.bb{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:min(480px,100%);background:var(--card);border-radius:24px 24px 0 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:center;box-shadow:0 -6px 20px #0002;z-index:5}
+.bb{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:min(480px,100%);background:var(--card);border-radius:24px 24px 0 0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;box-shadow:0 -6px 20px #0002;z-index:5}
 .bb small{color:var(--mut)}.bb b{font-size:22px;color:var(--red)}
 .ob{border:2px solid var(--brand);padding:9px 22px;font-weight:600;font-size:16px;border-radius:8px}
 /* nav pill */
 #nav{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:min(480px,100%);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));z-index:4}
-#nav div{background:var(--bar);border-radius:20px;padding:10px 14px;display:flex;justify-content:space-around;align-items:center;box-shadow:0 6px 24px #0003}
+#nav div{background:var(--bar);border-radius:20px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 6px 24px #0003}
 #nav button{display:flex;align-items:center;gap:8px;padding:10px;border-radius:999px;color:var(--ink);font-weight:500}
 #nav .on{background:var(--pill);color:var(--pillt);padding:10px 16px}#nav button:not(.on) span{display:none}
 /* misc */
 .rg{display:block;margin:6px auto;width:170px}.rg text{fill:var(--ink)}
 .it{display:flex;gap:10px;align-items:center;background:var(--card);border-radius:20px;padding:10px;margin:0 16px 10px}
 .it .th{width:60px;height:60px;border-radius:14px;overflow:hidden;flex:none}.it .th svg{width:100%;height:100%}.it .m{flex:1}.it small{color:var(--mut)}
-#ts{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);background:var(--pill);color:var(--pillt);padding:99px 18px;border-radius:999px;opacity:0;transition:.3s;pointer-events:none;z-index:9}
+#ts{position:fixed;left:50%;bottom:110px;transform:translateX(-50%);background:var(--pill);color:var(--pillt);padding:9px 18px;border-radius:999px;opacity:0;transition:.3s;pointer-events:none;z-index:9}
 .st{display:inline-flex;align-items:center;gap:6px;padding:3px 12px;border-radius:999px;font-weight:600;font-size:13px}.st i{width:8px;height:8px;border-radius:50%;background:currentColor}.st.o{background:#dff3e6;color:#1d7a47}.st.x{background:#fbe0e0;color:#b03a3a}
 #bn .sl{height:190px;text-decoration:none}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.g3 div{background:var(--card);border-radius:16px;padding:12px 6px;text-align:center;font-size:12px;font-weight:500}
@@ -123,6 +123,7 @@ select{flex:1;padding:8px 12px;border-radius:12px;border:1px solid var(--line);b
 .ddm{margin-top:8px;background:var(--bar);border-radius:22px;box-shadow:0 10px 30px #0003;padding:8px}
 .ddi{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px;border-radius:14px;color:var(--ink)}.ddi:active{background:var(--card)}.ddi small{display:block;color:var(--mut);font-size:12px}.ddt{flex:1}.ddic{font-size:22px;width:30px;text-align:center}.ddck{font-size:20px}
 .pyi{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}.pyi span{position:relative}.pyi img{width:84px;height:84px;object-fit:cover;border-radius:12px}.pyi button{position:absolute;top:2px;right:2px;background:#0008;color:#fff;border-radius:50%;width:22px;height:22px;font-size:12px}
+/* เพิ่มเติมสำหรับสไตล์ Admin สรุปขาดผ่อน และแจ้งเตือนสต็อก */
 .late-card{background:#ffebee;border:1px solid #ffcdd2;border-radius:18px;padding:12px 16px;margin-bottom:10px}
 .late-card.highlight{background:#ffcdd2;border:2px solid #e53935;box-shadow:0 4px 10px rgba(229,57,53,0.15)}
 .stock-badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:600}
@@ -135,52 +136,6 @@ select{flex:1;padding:8px 12px;border-radius:12px;border:1px solid var(--line);b
 <div id="nav"></div>
 <div id="ts"></div>
 <noscript>ต้องเปิด JavaScript เพื่อใช้งานเว็บนี้</noscript>
-
-<!-- สคริปต์หลักสำหรับสร้างหน้าเว็บเริ่มต้น -->
-<script>
-  // ฟังก์ชัน render หน้า Welcome Screen เบื้องต้น ป้องกันหน้าจอว่างเปล่า
-  function renderWelcomeScreen() {
-    const app = document.getElementById('app');
-    const nav = document.getElementById('nav');
-    
-    app.innerHTML = `
-      <div class="wl">
-        <div class="ci">
-          <svg class="i" style="width:100px;height:100px;color:var(--brand)" viewBox="0 0 24 24">
-            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-          </svg>
-        </div>
-        <h1>JINDEVINESIA</h1>
-        <span class="op">ร้านโทรศัพท์มือถือ</span>
-        <span class="nt">บริการ ซื้อ - ขาย - ผ่อน</span>
-        <button class="bt" onclick="alert('ระบบกำลังดาวน์โหลดข้อมูล...')">เข้าสู่หน้าหลัก</button>
-      </div>
-    `;
-
-    nav.innerHTML = `
-      <div>
-        <button class="on">
-          <svg class="i" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
-          <span>หน้าแรก</span>
-        </button>
-        <button>
-          <svg class="i" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path></svg>
-          <span>สินค้า</span>
-        </button>
-        <button>
-          <svg class="i" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-          <span>บัญชี</span>
-        </button>
-      </div>
-    `;
-  }
-
-  // แสดงผลหน้าต้อนรับเมื่อ HTML โหลดเสร็จ
-  document.addEventListener('DOMContentLoaded', renderWelcomeScreen);
-</script>
-
-<!-- โหลดไฟล์ firebase.js (ถ้ามี) -->
 <script type="module" src="firebase.js"></script>
 </body>
 </html>
