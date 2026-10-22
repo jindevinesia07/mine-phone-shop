@@ -130,6 +130,12 @@ select{flex:1;padding:8px 12px;border-radius:12px;border:1px solid var(--line);b
 <div id="nav"></div>
 <div id="ts"></div>
 <noscript>ต้องเปิด JavaScript เพื่อใช้งานเว็บนี้</noscript>
-<script type="module" src="firebase.js"></script>
+<script>
+(function(){var shown=0;function show(m){var a=document.getElementById('app');if(shown||!a||a.innerHTML.length>50)return;shown=1;a.innerHTML='<div style="padding:24px;font:15px/1.7 sans-serif;color:#442E23"><b>เปิดเว็บไม่ได้</b><br>'+m+'<br><br>ตรวจไฟล์: <a href="firebase-config.js">firebase-config.js</a> · <a href="app.js">app.js</a> · <a href="firebase.js">firebase.js</a></div>'}
+window.addEventListener('error',function(e){if(e.target&&e.target!==window&&e.target.tagName!=='SCRIPT')return;show('ข้อผิดพลาด: '+(e.message||'โหลดไฟล์ไม่สำเร็จ'))},true);
+window.addEventListener('unhandledrejection',function(e){show('ข้อผิดพลาด: '+((e.reason&&e.reason.message)||e.reason))});
+setTimeout(function(){show('หน้าเว็บยังไม่โหลดภายใน 8 วินาที ไฟล์ firebase-config.js อาจไม่ใช่ตัวที่ถูกต้อง ลองรีเฟรชอีกครั้ง')},8000)})();
+</script>
+<script type="module" src="firebase.js?v=2"></script>
 </body>
 </html>
