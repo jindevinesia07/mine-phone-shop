@@ -229,7 +229,7 @@ if(!n||!/^\d{8}$/.test(pw))return toast('กรอกชื่อและวั
 if(S.m==='up'){if(kk)return toast('ชื่อนี้ถูกใช้แล้ว');if(!($('#pdpa')||{}).checked)return toast('กรุณาติ๊กยินยอมการเก็บข้อมูลส่วนบุคคล');U[n]=pw;CS[n]=new Date().toISOString();W('u',U);W('cs',CS)}else if(!kk)return toast('ไม่พบชื่อ "'+n+'" (เครื่องนี้มีสมาชิก '+Object.keys(U).length+' คน)');else if(U[kk]!==pw)return toast('รหัสผ่านไม่ถูกต้อง');
 me=kk||n;if($('#rm').checked)W('me',me);go('home')}
 function go(v){clearInterval(tm);S.v=v;scrollTo(0,0);render()}
-function render(keep){const y=scrollY;$('#app').innerHTML=V[S.v]();const t=['home','shop','acc','cart','me'].includes(S.v),on=S.v==='detail'?'shop':S.v;
+function render(keep){const y=scrollY;document.title=(WL&&WL.name)||'JINDEVINESIA';$('#app').innerHTML=V[S.v]();const t=['home','shop','acc','cart','me'].includes(S.v),on=S.v==='detail'?'shop':S.v;
 $('#nav').innerHTML=t?`<div>${[['home','หน้าแรก'],['shop','สินค้า'],['acc','อุปกรณ์เสริม'],['cart','ตะกร้า'],['me','โปรไฟล์']].map(([k,n])=>`<button class="${on===k?'on':''}" onclick="go('${k}')">${ic(k)}<span>${n}</span></button>`).join('')}</div>`:'';
 if(S.v==='detail')cx();if(S.v==='home'){tm=setInterval(()=>{const b=$('#bn');if(b){const i=Math.round(b.scrollLeft/b.clientWidth);b.scrollTo({left:((i+1)%b.children.length)*b.clientWidth,behavior:'smooth'})}},3500)}
 if(keep)scrollTo(0,y)}
