@@ -6,7 +6,7 @@
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js';
 import {getAuth,onAuthStateChanged,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut,setPersistence,browserLocalPersistence,browserSessionPersistence} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js';
 import {getFirestore,doc,getDoc,setDoc,deleteDoc,collection,getDocs,query,where} from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js';
-import {firebaseConfig,ADMIN_EMAIL} from './firebase-config.js';
+import {firebaseConfig,ADMIN_EMAIL} from './firebase-config.js?v=2';
 
 const app$=document.getElementById('app');
 const fail=m=>{app$.innerHTML='<div style="padding:28px;font:15px/1.7 sans-serif;color:#442E23"><b>เปิดเว็บไม่ได้</b><br>'+m+'</div>'};
